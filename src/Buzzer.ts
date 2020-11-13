@@ -12,7 +12,7 @@ export class Buzzer {
 
     test() {
         // Toggle the state of the LED connected to GPIO17 every 200ms
-        const iv = setInterval(_ => this.buzzer.writeSync(this.buzzer.readSync() ^ 1), 200);
+        const iv = setInterval(_ => this.buzzer.writeSync(this.buzzer.readSync() ^ 1), 1);
 
 // Stop blinking the LED after 5 seconds
         setTimeout(_ => {
